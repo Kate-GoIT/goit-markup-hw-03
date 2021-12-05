@@ -5,13 +5,14 @@
     <meta charset="UTF-8" />
     <title>WebStudio</title>
    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <!--Header navigation--> 
 <body>
-<header>
-    <div class="container">  
+<header >
+    <section class="container">
+        <div class="navigation"> 
     <a href="" class="logo"><span class="logo-color">Web</span>Studio</a>
      <nav>
         <ul class="nav">
@@ -24,17 +25,21 @@
         <li class="item"><a class ="mail" href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
         <li class="item"><a class="tel" href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
         </ul>
-    </div>
+        </div>
+    </section>
 </header>
 
 <!--HERO -->
 <main>
-<section class="hero">
+<section class="container">
+    <div class="hero">
       <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
     <button type="button" class="hero-button">Заказать услугу</button>
+    </div>
 </section>
 <!-- What we do -->
-<section class="do-container"> 
+<section class="container">
+    <div class="do"> 
     <ul class="titles">
     <li class="title"><h3>Внимание к деталям</h3><p>Идейные соображения, а также начало повседневной работы
          по формированию позиции.</p></li>
@@ -45,18 +50,22 @@
     <li class ="title"><h3>Современные технологии</h3><p>Значимость этих проблем настолько очевидна, что 
         реализация плановых заданий.</p></li>
     </ul>
+    </div>
 </section>
 
-<section class="pictures-container">
+<section class="container">
+    <div class="pictures">
 <h2>Чем мы занимаемся</h2>
     <ul class="do-pictures">
     <li class="picture" ><img src="./images/typing.jpg" alt = "набор текста на клавиатуре" width = "370" ></li>
     <li class="picture"><img src="./images/phone.jpg" alt = "ноутбук и телефон в руках" width = "370" ></li>
     <li class="picture" ><img src="./images/tablet.jpg" alt = "планшет с изображением палитры" width = "370"></li>
     </ul>
+    </div>
 </section>
 <!--Our team-->
-<section class="team-container">
+<section class="container">
+    <div class="team">
    <h2>Наша команда</h2>
    <ul class="photoes">
    <li class="photo-person"><img src="./images/demyanenko.jpg" alt = " фото Игоря Демьяненко" width ="270" >
@@ -68,12 +77,13 @@
    <li class="photo-person"><img src="./images/yermakov.jpg" alt = "фото Михаила Ермакова" width = "270" >
        <div class="photo-content"><p class="photo-heading">Михаил Ермаков</p><span  class="photo-position">UI Designer</span></div></li>
    </ul>
+   </div>
 </section>
     </main>
  <!--Adress-->   
 <footer>
-    <section class="footer-container">
-        <div class= "adress-container">
+    <section class="container">
+        <div class= "adress">
      <a href="" class="logofoot"><span class="logo-color">Web</span>Studio</a>
 
     <address class="contacts">

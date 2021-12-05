@@ -59,11 +59,15 @@ ul {
 
 /* Navigation header*/
 .container {
-  display: flex;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0;
+  margin: 0 auto;
+}
+.navigation {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -73,7 +77,6 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-left: 0;
 }
 .contacthead {
   display: flex;
@@ -90,7 +93,6 @@ ul {
 .nav .item {
   padding-top: 32px;
   padding-bottom: 32px;
-  align-content: center;
 }
 
 .nav .item:not(:last-child) {
@@ -152,7 +154,6 @@ ul {
 
 .hero {
   background-color: var(--hero-background-color);
-  width: 1200px;
   padding: 94px 15px;
   margin: 0;
 }
@@ -186,12 +187,17 @@ ul {
   margin-right: auto;
 }
 
-.do-container {
+.hero-button:hover,
+.hero-button:focus {
+  box-shadow: 0px, 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.do {
   background-color: var(--primary-background-color);
-  width: 1200px;
   padding: 94px 15px;
 }
-.do-container .titles {
+.do .titles {
   display: flex;
 }
 .title {
@@ -205,11 +211,11 @@ ul {
   margin-right: 30px;
 }
 
-.titles h3 {
+.title h3 {
   font-weight: 700;
-  font-size: 13px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -217,20 +223,19 @@ ul {
 .title p {
   font-weight: 400;
   font-style: normal;
-  font-size: 11px;
-  line-height: 1.4;
+  font-size: 14px;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   text-align: left;
 }
-.pictures-container {
+.pictures {
   background-color: var(--primary-background-color);
-  width: 1200px;
   padding: 0 15px 94px;
   margin: 0;
 }
 
-.pictures-container > h2 {
+.pictures > h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -250,13 +255,12 @@ ul {
   margin-right: 30px;
 }
 
-.team-container {
+.team {
   background-color: var(--team-background-color);
-  width: 1200px;
   padding: 94px 15px;
+  margin: 0;
 }
-
-.team-container h2 {
+.team h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -268,7 +272,6 @@ ul {
 }
 .photoes {
   display: flex;
-  flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
@@ -294,7 +297,7 @@ img {
   padding: 30px 46px;
   text-align: center;
   background-color: var(--primary-white-color);
-  width: 270px;
+  max-width: 100%;
 }
 .photo-content > span {
   font-weight: 400;
@@ -307,15 +310,14 @@ img {
   box-shadow: var(--card-shadow);
   border-radius: 4px;
 }
-.footer-container {
+.adress {
   background-color: var(--hero-background-color);
-  width: 1200px;
   margin: 0;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.adress-container {
+.adress {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -360,29 +362,27 @@ img {
 }
 
 /* Portfolio block */
-.main {
-  background-color: var(--primary-background-color);
-  width: 1200px;
+.selector {
+  background-color: var(--primary-white-color);
   margin: 0;
-  padding: 94px 15px;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 .border {
   border-bottom: 1px solid var(--border-line-color);
 }
-.button-container {
+.menu {
+  margin-bottom: 50px;
+  margin-top: 0;
+  padding: 0;
   display: flex;
-  padding-bottom: 50px;
-  margin: 0;
+  align-content: center;
 }
-.button-container .nav-button:not(:last-child) {
+.menu .nav-button:first-child {
+  margin-left: 280px;
+}
+.menu .nav-button:not(:last-child) {
   margin-right: 8px;
-}
-.button-container {
-  margin-right: auto;
-  margin-left: 240px;
-}
-.nav-button .buttons {
-  align-items: center;
 }
 .buttons {
   background-color: var(--portfolio-buttons-color);
@@ -407,9 +407,9 @@ img {
   background-color: var(--porfolio-hover-color);
   color: var(--primary-white-color);
 }
-
-.photoes .tablet:not(:nth-child(3n + 3)) {
-  margin-right: 30px;
+.selector .photoes {
+  display: flex;
+  flex-wrap: wrap;
 }
 .photoes .tablet:not(:nth-child(3n + 3)) {
   margin-right: 30px;
@@ -417,7 +417,10 @@ img {
 .photoes .tablet:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
-
+.tablet {
+  border: 1px solid #eeeeee;
+  width: 370px;
+}
 .tablet p {
   font-weight: 700;
   font-size: 18px;
@@ -436,5 +439,4 @@ img {
   padding: 20px 24px;
   text-align: left;
   background-color: var(--primary-white-color);
-  width: 370px;
 }
