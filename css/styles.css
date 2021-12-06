@@ -326,6 +326,8 @@ img {
 .adress {
   background-color: var(--hero-background-color);
   margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logofoot {
