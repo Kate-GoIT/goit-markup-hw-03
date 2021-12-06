@@ -56,18 +56,20 @@ ul {
   margin: 0;
   list-style: none;
 }
-
-/* Navigation header*/
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin: 0;
 }
-.navigation {
+.navflex {
   display: flex;
+}
+/* Navigation header*/
+.navigation {
   padding-left: 15px;
   padding-right: 15px;
+  width: 1200px;
+  margin: 0;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -77,26 +79,31 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  align-items: center;
 }
 .contacthead {
-  display: flex;
   margin-left: auto;
   padding: 0;
+  display: flex;
 }
 .nav {
-  display: flex;
-  margin-left: 93px;
   margin-top: 0;
+  display: block;
   margin-bottom: 0;
   padding-left: 0;
+  align-items: center;
+  display: flex;
 }
-.nav .item {
+.nav .link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
 .nav .item:not(:last-child) {
   margin-right: 50px;
+}
+.nav .item:first-child {
+  margin-left: 93px;
 }
 .contacthead .item + .item {
   margin-left: 50px;
@@ -104,11 +111,11 @@ ul {
 .contacthead {
   margin-top: 0;
   margin-bottom: 0;
+  align-content: center;
 }
 .contacthead .item {
   padding-top: 32px;
   padding-bottom: 32px;
-  align-content: center;
 }
 .logo {
   align-self: center;
@@ -154,8 +161,9 @@ ul {
 
 .hero {
   background-color: var(--hero-background-color);
-  padding: 94px 15px;
+  padding: 200px 15px;
   margin: 0;
+  width: 1200px;
 }
 .hero-title {
   color: var(--primary-white-color);
@@ -196,6 +204,7 @@ ul {
 .do {
   background-color: var(--primary-background-color);
   padding: 94px 15px;
+  width: 1200px;
 }
 .do .titles {
   display: flex;
@@ -233,9 +242,10 @@ ul {
   background-color: var(--primary-background-color);
   padding: 0 15px 94px;
   margin: 0;
+  width: 1200px;
 }
 
-.pictures > h2 {
+.pictures h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -257,8 +267,10 @@ ul {
 
 .team {
   background-color: var(--team-background-color);
-  padding: 94px 15px;
   margin: 0;
+  width: 1200px;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 .team h2 {
   font-weight: 700;
@@ -272,6 +284,7 @@ ul {
 }
 .photoes {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
@@ -284,13 +297,13 @@ img {
   height: auto;
 }
 
-.photo-person > p {
+.photo-person p {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-.photo-content > p {
+.photo-content p {
   margin-bottom: 10px;
 }
 .photo-content {
@@ -299,7 +312,7 @@ img {
   background-color: var(--primary-white-color);
   max-width: 100%;
 }
-.photo-content > span {
+.photo-content span {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
@@ -315,9 +328,9 @@ img {
   margin: 0;
   padding-left: 15px;
   padding-right: 15px;
-}
+  width: 1200px;
 
-.adress {
+  display: block;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -338,6 +351,9 @@ img {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+
+  display: block;
+  margin-top: 9px;
 }
 
 .contacts p {
@@ -353,12 +369,6 @@ img {
 .contact:hover,
 .contact:focus {
   color: var(--button-logo-color);
-}
-.contacts a {
-  padding-bottom: 9px;
-}
-.footmail {
-  padding-top: 9px;
 }
 
 /* Portfolio block */
@@ -407,7 +417,10 @@ img {
   background-color: var(--porfolio-hover-color);
   color: var(--primary-white-color);
 }
-.selector .photoes {
+.selector {
+  width: 1200px;
+}
+.photoes {
   display: flex;
   flex-wrap: wrap;
 }
