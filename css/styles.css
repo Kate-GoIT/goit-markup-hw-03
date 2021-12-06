@@ -59,7 +59,10 @@ ul {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
 }
 .navflex {
   display: flex;
@@ -69,7 +72,7 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-  margin: 0;
+  margin: 0 auto;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -162,7 +165,7 @@ ul {
 .hero {
   background-color: var(--hero-background-color);
   padding: 200px 15px;
-  margin: 0;
+  margin: 0 auto;
   width: 1200px;
 }
 .hero-title {
@@ -204,7 +207,8 @@ ul {
 .do {
   background-color: var(--primary-background-color);
   padding: 94px 15px;
-  width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .do .titles {
   display: flex;
@@ -241,7 +245,7 @@ ul {
 .pictures {
   background-color: var(--primary-background-color);
   padding: 0 15px 94px;
-  margin: 0;
+  margin: 0 auto;
   width: 1200px;
 }
 
@@ -267,7 +271,7 @@ ul {
 
 .team {
   background-color: var(--team-background-color);
-  margin: 0;
+  margin: 0 auto;
   width: 1200px;
   padding-bottom: 94px;
   padding-top: 94px;
@@ -325,12 +329,12 @@ img {
 }
 .adress {
   background-color: var(--hero-background-color);
-  margin: 0;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
 
-  display: block;
+  /* display: block; */
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -374,9 +378,10 @@ img {
 /* Portfolio block */
 .selector {
   background-color: var(--primary-white-color);
-  margin: 0;
+  margin: 0 auto;
   padding-bottom: 94px;
   padding-top: 94px;
+  width: 1200px;
 }
 .border {
   border-bottom: 1px solid var(--border-line-color);
@@ -417,9 +422,7 @@ img {
   background-color: var(--porfolio-hover-color);
   color: var(--primary-white-color);
 }
-.selector {
-  width: 1200px;
-}
+
 .photoes {
   display: flex;
   flex-wrap: wrap;
