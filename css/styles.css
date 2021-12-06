@@ -60,8 +60,7 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  align-items: center;
-  max-width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .navflex {
@@ -166,7 +165,6 @@ ul {
   background-color: var(--hero-background-color);
   padding: 200px 15px;
   margin: 0 auto;
-  width: 1200px;
 }
 .hero-title {
   color: var(--primary-white-color);
@@ -207,7 +205,6 @@ ul {
 .do {
   background-color: var(--primary-background-color);
   padding: 94px 15px;
-  max-width: 1200px;
   margin: 0 auto;
 }
 .do .titles {
@@ -246,7 +243,6 @@ ul {
   background-color: var(--primary-background-color);
   padding: 0 15px 94px;
   margin: 0 auto;
-  width: 1200px;
 }
 
 .pictures h2 {
@@ -272,7 +268,7 @@ ul {
 .team {
   background-color: var(--team-background-color);
   margin: 0 auto;
-  width: 1200px;
+
   padding-bottom: 94px;
   padding-top: 94px;
 }
@@ -330,13 +326,7 @@ img {
 .adress {
   background-color: var(--hero-background-color);
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-
-  /* display: block; */
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 15px;
 }
 
 .logofoot {
@@ -381,11 +371,11 @@ img {
   margin: 0 auto;
   padding-bottom: 94px;
   padding-top: 94px;
-  width: 1200px;
 }
 .border {
   border-bottom: 1px solid var(--border-line-color);
 }
+
 .menu {
   margin-bottom: 50px;
   margin-top: 0;
